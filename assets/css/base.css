@@ -1,0 +1,180 @@
+﻿/* fonts */
+.light, .normal, .bold, .exbold {
+    font-family: 'Exo';
+    word-wrap: break-word;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.exbold {
+    font-weight: 600;
+}
+a {
+	color: #1f1f1f;
+}
+/* general */
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#preloader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff url(img/preloader.gif) no-repeat center center;
+    background-size: 70px;
+    z-index: 9;
+}
+
+
+#beard {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    z-index: 8;
+    display: none;
+}
+
+#card {
+    position: absolute;
+    width: 476px;
+    height: 185px;
+    bottom: 100%;
+    left: 10%;
+    background-color: #fff;
+    z-index: 1;
+    padding: 20px;
+    /* opacity */
+    opacity: 0;
+    /* sizing */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+    #card .line,
+    #card .line-mobile {
+        border-color: #E4E4E4;
+        margin: 15px 0;
+    }
+
+    #card .line-mobile {
+        display: none;
+    }
+
+    #card .title,
+    #card .description,
+    #card .contact .mail-to {
+        color: #1f1f1f;
+    }
+
+    #card .title {
+        font-size: 60px;
+    }
+
+    #card .description {
+        margin: 10px 4px;
+        font-size: 15px;
+    }
+
+    #card .contact .mail-to {
+        line-height: 31px;
+        margin-right: 12px;
+        margin-left: 5px;
+    }
+
+    #card .contact .mail-to,
+    #card .contact .liner,
+    #card .contact .socail-icons {
+        float: left;
+    }
+
+    #card .contact .liner {
+        color: #cfcfcf;
+        line-height: 28px;
+    }
+
+    #card .contact .liner,
+    #card .contact .socail-icons {
+        margin: 0 10px;
+    }
+
+    #card .contact .mail-to:hover {
+        color: #836953;
+    }
+
+/* Mobile Phone */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #beard {
+right: 50%;
+margin-right: -50px;
+width: 100px;
+height: auto;
+    }
+
+    #card {
+        width: 310px;
+        left: 50%;
+        margin-left: -155px;
+        height: 200px;
+    }
+
+        #card .title {
+            font-size: 49px;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        #card .description {
+            margin: 10px 4px;
+            font-size: 15px;
+            width: 100%;
+            text-align: center;
+            line-height: 19px;
+        }
+
+        #card .contact .liner {
+            display: none;
+        }
+
+        #card .line-mobile {
+            display: block;
+            width: 100%;
+            float: left;
+        }
+
+        #card .contact .mail-to {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 19px;
+        }
+
+    #card .contact .socail-icons.linkedin_transp {
+        margin-left: 22px;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-device-width: 768px) {
+}
+
+.link.cinephilia:hover {
+        color: #f15f43;
+}
